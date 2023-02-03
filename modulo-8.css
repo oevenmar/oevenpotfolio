@@ -1,0 +1,123 @@
+
+@import url('./tabela-08.css');
+
+/* 
+
+	Herança
+
+	1 Sobreposição/Sobrescreve
+	2 Aplica a último estilo definido
+	3 Prioriza estilo específicas(com seletores mais próximos)
+	4 Se aplica a todas as propriedades
+
+ */
+
+
+html {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #333333;
+}
+
+p {
+	color: #454545;
+}
+
+header p {
+	color: #fff;
+	font-size: 0.7rem;
+}
+/* Combinadores 
+	(espaço) seletor descendente 
+	(>)combinador de seletores filhos
+	(+)combinador de elementos irmãos adjacentes /que vem logo na sequencia
+	(~)combinador de elementos irmãos geral/após elemento de referência
+*/
+
+header h2 {
+	font-weight: 100;
+}
+
+header > h2 {
+	font-weight: 600;
+}
+
+h2 + p {
+
+	color: white;
+}
+
+h2 ~ h5 {
+	font-size: 1.2rem;
+}
+
+div ~ p {
+	text-transform: uppercase;
+}
+
+/* pseudo-classes */
+
+a {
+	color:#fff ;
+	text-decoration: none; /* o padrão é underline */
+	display: -ms-flexbox;
+	width: 100%;
+	height: auto;
+}
+
+a:visited {
+	color: rgb(253, 251, 251);
+}
+
+a:active {
+	color: #096;
+}
+
+h2:hover {
+	color: #888;
+}
+
+/* Tipografia*/
+
+h1, h2, h3 {
+	font-weight: 0;
+	padding-bottom: 6px;
+}
+
+p {
+	font-weight: normal;
+
+}
+	
+ /*Cores*/
+
+body {
+	background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-image: url;
+}
+
+section {
+	background: rgba(255, 255, 255, 0.60);
+}
+p {
+	color: rgb(138, 138, 146);
+	color: #034589;
+}
+
+footer p {
+	color: rgb(255, 255, 255);
+	font-size: 0.6rem;
+}
+.navegacao {
+	background-color: rgba(0, 0, 0, 0.5);
+
+}
+.navegacao li a {
+	color: white;
+	
+}
+.navegacao li a:hover {
+	background-color: rgba(150, 150, 200, .5);
+	color: #333333;
+}
